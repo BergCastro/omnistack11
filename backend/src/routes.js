@@ -37,7 +37,7 @@ routes.get(
   "/profile",
   celebrate({
     [Segments.HEADERS]: Joi.object({
-      autorization: Joi.string().required()
+      authorization: Joi.string().required()
     }).unknown()
   }),
   ProfileController.index
